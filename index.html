@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hju.dev</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="#hero"><span>//</span> hju.dev</a>
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#certs">certs</a></li>
+      <li><a href="#devlog">devlog</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <p class="hero-label">// full-stack developer in training</p>
+    <h1>Henry James<br><span class="accent">Underwood.</span></h1>
+    <p class="hero-sub">
+      Building <strong>Global Mode</strong> — a road trip companion for travelers who want more than Google Maps.
+      Learning in public. Based in Thailand.
+    </p>
+    <div class="terminal">
+      <div class="terminal-bar">
+        <div class="dot dot-r"></div>
+        <div class="dot dot-y"></div>
+        <div class="dot dot-g"></div>
+      </div>
+      <div class="term-line"><span class="prompt">$ </span><span class="cmd">whoami</span></div>
+      <div class="term-line"><span class="out">→ full-stack dev in training | freeCodeCamp</span></div>
+      <div class="term-line"><span class="prompt">$ </span><span class="cmd">cat current_project.txt</span></div>
+      <div class="term-line"><span class="out">→ <span class="hi">Global Mode</span> — travel app, Thailand-first</span></div>
+      <div class="term-line"><span class="prompt">$ </span><span id="typing-cmd"></span><span id="cursor"></span></div>
+    </div>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#projects">view projects</a>
+      <a class="btn btn-ghost" href="#contact">get in touch</a>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ABOUT -->
+  <section id="about" class="fade-in">
+    <div class="section-header">
+      <span class="section-tag">// 01 — about</span>
+      <h2 class="section-title">Who I am.</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I'm a freelancer transitioning into full-stack development, currently working through the freeCodeCamp curriculum. I'm based in Thailand, which is also the first market for my flagship project, Global Mode.</p>
+        <p>I believe in learning in public, so this site grows with me. No fake seniority, no inflated experience. Just consistent progress and real projects.</p>
+        <p>When I'm not coding, I'm on the road finding the kind of routes that Google Maps would never suggest. That's where Global Mode comes from.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-label">// current focus</div>
+          <div class="stat-value">Full-Stack Dev</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">// curriculum</div>
+          <div class="stat-value">freeCodeCamp</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">// based in</div>
+          <div class="stat-value">Thailand 🇹🇭</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">// status</div>
+          <div class="stat-value open">open to work</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- SKILLS -->
+  <section id="skills" class="fade-in">
+    <div class="section-header">
+      <span class="section-tag">// 02 — skills</span>
+      <h2 class="section-title">My stack.</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <div class="skill-group-label">// languages</div>
+        <div class="skill-item">
+          <span class="skill-name">HTML</span>
+          <span class="skill-status status-solid">solid</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">CSS</span>
+          <span class="skill-status status-solid">solid</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">JavaScript</span>
+          <span class="skill-status status-learning">learning</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-label">// frameworks & tools</div>
+        <div class="skill-item">
+          <span class="skill-name">React</span>
+          <span class="skill-status status-exploring">exploring</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">Git & GitHub</span>
+          <span class="skill-status status-solid">solid</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">Cloud Computing</span>
+          <span class="skill-status status-learning">learning</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-label">// next up</div>
+        <div class="skill-item">
+          <span class="skill-name">Node.js</span>
+          <span class="skill-status status-exploring">queued</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">Databases</span>
+          <span class="skill-status status-exploring">queued</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">APIs / REST</span>
+          <span class="skill-status status-exploring">queued</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- PROJECTS -->
+  <section id="projects" class="fade-in">
+    <div class="section-header">
+      <span class="section-tag">// 03 — projects</span>
+      <h2 class="section-title">What I'm building.</h2>
+    </div>
+    <div class="project-featured">
+      <span class="project-badge">// flagship project — phase 1</span>
+      <div class="project-title">Global Mode</div>
+      <div class="project-subtitle">Road Trip Companion App · Thailand-first</div>
+      <p class="project-desc">
+        Google Maps gets you from A to B. Global Mode gets you everywhere worth going in between.
+        A mobile-first travel app built for road trippers who want scenic routes, vibe filters, honest local data, and a co-driver experience — not just ETA.
+      </p>
+      <div class="project-features">
+        <div class="feature-pill">Vibe factor filters</div>
+        <div class="feature-pill">Scenic road routing</div>
+        <div class="feature-pill">Spoiler blocker toggle</div>
+        <div class="feature-pill">Road quality ratings</div>
+        <div class="feature-pill">Co-driver mode</div>
+        <div class="feature-pill">SOS button</div>
+        <div class="feature-pill">Fuel stop planner</div>
+        <div class="feature-pill">Community data</div>
+      </div>
+      <div class="project-tags">
+        <span class="tag">React</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Mobile-first</span>
+        <span class="tag">Phase 1 — in progress</span>
+      </div>
+    </div>
+    <div class="projects-placeholder">
+      <p>// more projects loading... <span class="accent">building in public</span></p>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- CERTIFICATIONS -->
+  <section id="certs" class="fade-in">
+    <div class="section-header">
+      <span class="section-tag">// 04 — certifications</span>
+      <h2 class="section-title">Proof of progress.</h2>
+    </div>
+    <div class="certs-grid">
+      <div class="cert-card">
+        <div class="cert-platform">// freeCodeCamp</div>
+        <div class="cert-name">Responsive Web Design</div>
+        <div class="cert-status complete">✓ complete</div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-platform">// freeCodeCamp</div>
+        <div class="cert-name">JavaScript Algorithms & Data Structures</div>
+        <div class="cert-status in-progress">⟳ in progress</div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-platform">// Anthropic</div>
+        <div class="cert-name">Claude Certified Architect</div>
+        <div class="cert-status queued">— queued</div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-platform">// add yours</div>
+        <div class="cert-name">Your next certification here</div>
+        <div class="cert-status queued">— coming soon</div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- DEVLOG -->
+  <section id="devlog" class="fade-in">
+    <div class="section-header">
+      <span class="section-tag">// 05 — dev log</span>
+      <h2 class="section-title">Building in public.</h2>
+    </div>
+    <div class="devlog-list">
+      <div class="log-entry">
+        <div class="log-date">2025 — day 01</div>
+        <div>
+          <div class="log-title">// site is live</div>
+          <div class="log-body">Launched hju.dev. Built with pure HTML, CSS, and JS — no frameworks yet. First step in building in public. Global Mode project spec is written. Now I learn how to build it.</div>
+        </div>
+      </div>
+      <div class="log-entry">
+        <div class="log-date">— add yours —</div>
+        <div>
+          <div class="log-title">// your next entry</div>
+          <div class="log-body">What did you build this week? What did you learn? What broke? Write it here. Consistency compounds.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- CONTACT -->
+  <section id="contact" class="fade-in">
+    <div class="section-header">
+      <span class="section-tag">// 06 — contact</span>
+      <h2 class="section-title">Let's talk.</h2>
+    </div>
+    <div class="contact-inner">
+      <h3>Open to freelance & remote work</h3>
+      <p>Got a project? Want to follow the Global Mode build? Just say hello.</p>
+      <div class="contact-links">
+        <a class="btn btn-primary" href="mailto:hello@hju.dev">hello@hju.dev</a>
+        <a class="btn btn-ghost" href="https://github.com" target="_blank">GitHub</a>
+        <a class="btn btn-ghost" href="https://linkedin.com" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>// hju.dev · built by henry james underwood · Thailand 🇹🇭 · <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+// ================================
+// YEAR — auto-updates the footer
+// ================================
+document.getElementById('year').textContent = new Date().getFullYear();
+
+
+// ================================
+// SCROLL ANIMATIONS
+// Watches for sections entering the viewport
+// and adds the 'visible' class to fade them in
+// ================================
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+
+// ================================
+// TYPING ANIMATION
+// Cycles through terminal commands
+// in the hero section
+// ================================
+const phrases = [
+  'git status',
+  'npm run dev',
+  'node server.js',
+  'cd global-mode'
+];
+
+let phraseIndex = 0;
+let charIndex   = 0;
+let isDeleting  = false;
+
+const typingEl = document.getElementById('typing-cmd');
+
+function type() {
+  const currentPhrase = phrases[phraseIndex];
+
+  if (!isDeleting) {
+    // typing forward
+    charIndex++;
+    typingEl.textContent = currentPhrase.slice(0, charIndex);
+
+    if (charIndex === currentPhrase.length) {
+      // finished typing — pause, then start deleting
+      isDeleting = true;
+      setTimeout(type, 1800);
+      return;
+    }
+  } else {
+    // deleting
+    charIndex--;
+    typingEl.textContent = currentPhrase.slice(0, charIndex);
+
+    if (charIndex === 0) {
+      // finished deleting — move to next phrase
+      isDeleting = false;
+      phraseIndex = (phraseIndex + 1) % phrases.length;
+    }
+  }
+
+  setTimeout(type, isDeleting ? 60 : 110);
+}
+
+type();
